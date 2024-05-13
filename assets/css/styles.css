@@ -1,0 +1,563 @@
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3586ff;
+  margin-top: 20px;
+  height: 150px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.services .services-title .services-title-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.services .services-title .services-description-text {
+  color: #fff;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.services-item {
+  padding: 10px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.services-item .services-item-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #3586ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.services-item p {
+  text-align: center;
+}
+
+.services-item h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.our-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+
+.about-us__title,
+.services__title,
+.products__title,
+.contact-us__title {
+  text-align: center;
+}
+
+.about-us__title .about-us__text,
+.services__title .services__text,
+.products__title .products__text,
+.contact__title .contact-us__text {
+  font-size: 2rem;
+}
+
+.about-us-title_divider,
+.services-title_divider,
+.products-title_divider,
+.contact-us-title_divider {
+  width: 100px;
+  height: 2px;
+  background-color: #3586ff;
+  margin: 30px auto;
+}
+
+.about-us__description {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #333;
+}
+
+.about-us__who-we-are {
+  margin-top: 50px;
+}
+
+.about-us__who-we-are__title {
+  text-align: center;
+  line-height: 1.8em;
+}
+
+.btn-cart {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-cart .lucide-shopping-cart {
+  color: #fff;
+}
+
+.card .card-img {
+  padding: 50px;
+}
+
+.services-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/assets/img/services.jpg);
+  height: 400px;
+  overflow: hidden;
+}
+
+.services-banner img {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact-us__contact-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-us__contact-info__item {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-us__form {
+  margin-top: 20px;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideIn {
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 1s ease-in-out;
+}
+
+.shopping-cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.shopping-cart-icon {
+  fill: white;
+  width: 24px;
+  height: 24px;
+}
+
+.cart-count {
+  visibility: hidden;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  background-color: white;
+  color: #18A0FB;
+  padding: 2px 6px;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.products__title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.product {
+  text-align: center;
+  border: 1px solid #18A0FB;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #18A0FB;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="number"]:hover,
+textarea:hover {
+  border: 1px solid #18A0FB;
+}
+
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-submit {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #008CBA;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #007B9A;
+}
+
+/* Toast message styles */
+.toast-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  transform: none;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  max-width: 80%;
+  /* Prevent the toast from being too wide on large screens */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Add a subtle shadow */
+  font-size: 1.2em;
+  /* Make the text a bit larger */
+}
+
+.toast-message.show {
+  opacity: 1;
+  animation: slideIn 0.5s forwards;
+}
+
+.toast-message.hide {
+  opacity: 1;
+  animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.centered-table th,
+.centered-table td {
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    margin: 0 1rem 0 1rem;
+  }
+
+  main {
+    margin: 0rem 1rem 0rem 1rem;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-item {
+    width: 100%;
+  }
+
+  .hero-right {
+    margin-top: 10px;
+    padding: 1rem;
+  }
+
+  .services {
+    height: auto;
+    padding: 20px;
+  }
+
+  .services-item {
+    width: 100%;
+  }
+
+  .services-item .services-item-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .services-item p {
+    font-size: 0.8rem;
+  }
+
+  .services-item h3 {
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+  }
+
+  .services-banner {
+    height: 200px;
+  }
+
+  .services-banner img {
+    background-size: cover;
+  }
+
+  .contact-us__contact-info {
+    flex-direction: column;
+  }
+
+  .contact-us__contact-info__item {
+    width: 100%;
+  }
+
+  .contact-us__form {
+    margin-top: 10px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.5rem;
+  }
+
+  .about-us__who-we-are__title {
+    font-size: 1rem;
+  }
+
+  .about-us__description {
+    font-size: 0.8rem;
+  }
+
+  .about-us__who-we-are {
+    margin-top: 20px;
+  }
+
+  .services__title .services__text {
+    font-size: 1.5rem;
+  }
+
+  .services-item {
+    height: 200px;
+  }
+
+  .services-item p {
+    font-size: 0.8rem;
+  }
+
+  .services-item h3 {
+    font-size: 1rem;
+  }
+
+  .card {
+    margin-top: 10px;
+  }
+
+  .card .card-img {
+    padding: 20px;
+  }
+
+  .products__title {
+    margin-bottom: 1rem;
+  }
+
+  .product {
+    margin: 1rem 0;
+  }
+
+  .our-services {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .services .services-title .services-title-text {
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .services .services-title .services-description-text {
+    font-size: 0.8rem;
+    color: #fff;
+  }
+}

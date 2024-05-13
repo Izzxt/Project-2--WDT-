@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/layouts.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>My Cart</title>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div><img src="assets/img/logo.png" alt="logo" height="50px"></div>
+      <div class="navbar-middle">
+        <div class="navbar-item"><a href="index.html">Home</a></div>
+        <div class="navbar-item"><a href="about_us.html">About</a></div>
+        <div class="navbar-item"><a href="services.html">Services</a></div>
+        <div class="navbar-item"><a href="products.html">Products</a></div>
+        <div class="navbar-item"><a href="contact_us.html">Contact</a></div>
+      </div>
+      <div class="navbar-right">
+        <div class="shopping-cart">
+          <div class="cart-count" id="cart-count">0</div>
+          <a href="cart.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="#18A0FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="shopping-cart-icon">
+              <circle cx="8" cy="21" r="1" />
+              <circle cx="19" cy="21" r="1" />
+              <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+            </svg>
+          </a>
+        </div>
+        <!-- Add hamburger menu button -->
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main style="margin-top: 2rem;">
+    <div class="products__title">
+      <h1 class="products__text poppins-regular">My Cart</h1>
+      <div class="products-title_divider"></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <table class="table centered-table" id="cart-table">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Remove</th>
+              </tr>
+            </thead>
+            <tbody id="cart-items">
+              <!-- Cart items will be inserted here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Summary</h5>
+              <p class="card-text"><strong>Total items:</strong> <span id="total-items">0</span></p>
+              <p class="card-text"><strong> Total price:</strong> $<span id="total-price">0.00</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <button type="button" class="btn btn-primary checkout-cart" style="margin-top: 2rem;">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="home.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="about_us.html">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="services.html">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="products.html">Products</a></li>
+      <li class="menu__item"><a class="menu__link" href="contact-us.html">Contact</a></li>
+
+    </ul>
+    <p>&copy;2024 Politeknik Seberang Perai | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/hamburger.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/layouts.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Tech Solutions</title>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div><img src="assets/img/logo.png" alt="logo" height="50px"></div>
+      <div class="navbar-middle">
+        <div class="navbar-item"><a href="index.html">Home</a></div>
+        <div class="navbar-item"><a href="about_us.html">About</a></div>
+        <div class="navbar-item"><a href="services.html">Services</a></div>
+        <div class="navbar-item"><a href="products.html">Products</a></div>
+        <div class="navbar-item"><a href="contact_us.html">Contact</a></div>
+      </div>
+      <div class="navbar-right">
+        <div class="shopping-cart">
+          <a href="cart.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="#18A0FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="shopping-cart-icon">
+              <circle cx="8" cy="21" r="1" />
+              <circle cx="19" cy="21" r="1" />
+              <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+            </svg>
+          </a>
+        </div>
+        <!-- Add hamburger menu button -->
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main style="margin-top: 2rem;">
+    <div class="contact-us__title">
+      <h1 class="contact-us__text poppins-regular">Contact Us</h1>
+      <div class="contact-us-title_divider"></div>
+    </div>
+    <div class="contact-us__description">
+      <p class="contact-us__text poppins-regular-italic">We are always here to help you with any technical issues you
+        may have. Our team of experts is available 24/7 to assist you with any technical issues you may have. You can
+        contact us by phone, email, or through our website. We are committed to providing excellent customer service and
+        support to our customers. We are always looking for ways to improve our products and services to better serve
+        our
+        customers.</p>
+    </div>
+    <div class="contact-us__contact-info">
+      <div class="contact-us__contact-info__item">
+        <h3 class="poppins-semibold">Phone</h3>
+        <p>015-556 6543</p>
+      </div>
+      <div class="contact-us__contact-info__item">
+        <h3 class="poppins-semibold">Email</h3>
+        <p>
+          <a href="mailto: ">Email Us</a>
+        </p>
+      </div>
+      <div class="contact-us__contact-info__item">
+        <h3 class="poppins-semibold">Address</h3>
+        <p>Lot 45 KLCC Tower,Kuala Lumpur</p>
+      </div>
+    </div>
+    <div class="contact-us__form">
+      <h3 class="poppins-semibold">Send us a message</h3>
+      <form id="contact-us__form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+          <div class="error-message" style="display: none; color: red;">Name is required</div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <div class="error-message" style="display: none; color: red;">Email is required</div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+          <div class="error-message" style="display: none; color: red;">Message is required</div>
+        </div>
+        <button type="submit" class="btn btn-submit">Submit</button>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="home.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="about_us.html">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="services.html">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="products.html">Products</a></li>
+      <li class="menu__item"><a class="menu__link" href="contact-us.html">Contact</a></li>
+
+    </ul>
+    <p>&copy;2024 Politeknik Seberang Perai | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="assets/js/form-validation.js"></script>
+  <script src="assets/js/hamburger.js"></script>
+</body>
+
+</html>
